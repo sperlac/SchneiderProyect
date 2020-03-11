@@ -8,6 +8,7 @@ namespace Contadores.Models
 {
     public class Meter
     {
+        //object meter
         [PrimaryKey, Identity]
         public int id { get; set; }
         public string serialNumber { get; set; }

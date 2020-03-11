@@ -20,7 +20,7 @@ namespace Contadores
             //Load grid view with all meter and gateways
             loadAll();
         }
-
+        //to insert new meter and gateway
         protected void add_Click(object sender, EventArgs e)
         {
             if (this.options.SelectedItem.Text.Equals("Gateway") && !this.serialNumerBox.Text.Equals("") && !this.ipBox.Text.Equals(""))
@@ -95,7 +95,8 @@ namespace Contadores
             }
                 
         }
-
+        
+        //visibility options
         protected void loadOptions(object sender, EventArgs e)
         {
             if (this.options.SelectedItem.Text.Equals("Light meter") || this.options.SelectedItem.Text.Equals("Water meter"))
@@ -117,6 +118,7 @@ namespace Contadores
         }
         #endregion
 
+        //clean form when this is added
         public void cleanForm() {            
             this.portBox.Text = string.Empty;
             this.ipBox.Text = string.Empty;
@@ -124,7 +126,7 @@ namespace Contadores
             this.serialNumerBox.Text = string.Empty;
             this.brandBox.Text = string.Empty;
         }
-
+        //list all meters and gateways
         public void loadAll() {
             GateWayService gt = new GateWayService(new List<TextBox>());
             List <Gateway> listGateWay = new List<Gateway>();

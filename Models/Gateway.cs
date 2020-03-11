@@ -8,6 +8,7 @@ namespace Contadores.Models
 {
     public class Gateway
     {
+        //object gateway
         [PrimaryKey, Identity]
         public int id { get; set; }
         public string serialNumber { get; set; }

@@ -20,6 +20,7 @@ namespace Contadores.Services
             this.listTextBox = listTextBox;
         }
 
+        //insert new meter
         public void RegisterMeter(string typeMeter)
         {
             try

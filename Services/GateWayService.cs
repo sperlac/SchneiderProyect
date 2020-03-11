@@ -17,7 +17,7 @@ namespace Contadores.Services
         {
             this.listTextBox = listTextBox;
         }
-
+        //insert new gateway
         public void RegisterGateWay()
         {
             try
